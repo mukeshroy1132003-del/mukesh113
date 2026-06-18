@@ -148,11 +148,77 @@ nav {
   overflow: hidden;
   box-shadow: var(--shadow);
 }
-.about-card-top { background: var(--navy); padding: 36px 32px; text-align: center; }
-.about-avatar { width: 80px; height: 80px; background: var(--gold); border-radius: 50%; margin: 0 auto 16px; overflow: hidden; }
-.about-avatar img { width: 100%; height: 100%; object-fit: cover; }
-.about-name { font-family: var(--font-h); font-size: 22px; font-weight: 600; color: #fff; }
-.about-tag { font-size: 12px; color: var(--gold-lt); margin-top: 4px; }
+.about-card-top{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#071330,#0d1f4d,#102a6b);
+  padding:40px 32px;
+  text-align:center;
+}
+
+.about-card-top::before{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background:rgba(255,255,255,.04);
+  top:-120px;
+  left:-120px;
+}
+
+.about-card-top::after{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  background:rgba(255,255,255,.03);
+  bottom:-90px;
+  right:-90px;
+}
+
+.about-avatar{
+  width:130px;
+  height:130px;
+  margin:0 auto 20px;
+  overflow:hidden;
+  border-radius:20px;
+  border:4px solid #fff;
+  background:#fff;
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+  transition:.3s ease;
+  position:relative;
+  z-index:2;
+}
+
+.about-avatar:hover{
+  transform:scale(1.05);
+}
+
+.about-avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.about-name{
+  position:relative;
+  z-index:2;
+  font-family:var(--font-h);
+  font-size:36px;
+  font-weight:600;
+  color:#fff;
+}
+
+.about-tag{
+  position:relative;
+  z-index:2;
+  font-size:14px;
+  font-weight:500;
+  color:#f4b942;
+  margin-top:8px;
+}
 .about-card-body { padding: 28px 32px; }
 .about-row { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border-soft); font-size: 14px; }
 .about-row:last-child { border-bottom: none; }
@@ -252,14 +318,58 @@ nav {
 /* ════════════════════════
    TOOLS
 ════════════════════════ */
-#tools { background: var(--bg-warm); }
-.tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap: 14px; }
-.tool-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-xl); padding: 28px 20px; text-align: center; transition: border-color 0.2s, box-shadow 0.2s; }
-.tool-card:hover { border-color: var(--gold-border); box-shadow: var(--shadow); }
-.tool-logo { width: 48px; height: 48px; margin: 0 auto 14px; }
-.tool-logo img { width:100%; height:100%; object-fit:contain; }
-.tool-name { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-.tool-desc { font-size: 12px; color: var(--ink-faint); }
+#tools {
+  background: var(--bg-warm);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+}
+
+.tool-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-border);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.tool-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tool-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.tool-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
 
 /* ════════════════════════
    PROCESS
@@ -535,7 +645,7 @@ footer { background: #070b14; padding: 36px 0; }
             <div class="about-row"><span class="lbl">Clients</span><span class="val">50+ Brands Grown</span></div>
             <div class="about-row"><span class="lbl">Specialty</span><span class="val">Organic Growth & Technical SEO</span></div>
             <div class="about-row"><span class="lbl">Languages</span><span class="val">Hindi, English</span></div>
-            <div class="about-row"><span class="lbl">Email</span><span class="val" style="color:var(--gold)">mukeshroy1132003@gmail.com</span></div>
+            <div class="about-row"><span class="lbl">Email</span><span class="val" style="color:var(--Black)">mukeshroy1132003@gmail.com</span></div>
           </div>
         </div>
       </div>
@@ -714,11 +824,11 @@ footer { background: #070b14; padding: 36px 0; }
           <span class="case-tag">Recruitment & HR</span>
           <h3>Om Sai Group Consultancy — Delhi NCR Recruitment Agency</h3>
           <div class="case-metrics">
-            <div class="case-m"><div class="case-m-val">+<span>265</span>%</div><div class="case-m-lbl">Organic Traffic</div></div>
-            <div class="case-m"><div class="case-m-val"><span>#1</span></div><div class="case-m-lbl">Local Rankings</div></div>
-            <div class="case-m"><div class="case-m-val">5<span>mo</span></div><div class="case-m-lbl">Timeline</div></div>
+            <div class="case-m"><div class="case-m-val">+<span>100</span>%</div><div class="case-m-lbl">Organic Traffic</div></div>
+            <div class="case-m"><div class="case-m-val"><span>#1-5</span></div><div class="case-m-lbl">Local Rankings</div></div>
+            <div class="case-m"><div class="case-m-val">18<span>mo</span></div><div class="case-m-lbl">Timeline</div></div>
           </div>
-          <p class="case-desc">Om Sai Group Consultancy (omsaigroupconsultancy.com) is a Delhi NCR-based recruitment agency serving MNCs in IT and non-IT sectors. The challenge: competing in a saturated market where big recruitment portals dominated every search. I ran a full technical audit, built a targeted local keyword strategy around "recruitment agency Delhi NCR" and sector-specific terms, optimized all service pages, and launched a structured link building campaign through HR industry directories and local citations. Result: 265% increase in organic traffic within 5 months, first-page rankings for 18 target keywords, and a significant uptick in qualified employer inquiries.</p>
+          <p class="case-desc">Om Sai Group Consultancy (omsaigroupconsultancy.com) is a Delhi NCR-based recruitment agency serving MNCs in IT and non-IT sectors. The challenge: competing in a saturated market where big recruitment portals dominated every search. I ran a full technical audit, built a targeted local keyword strategy around "recruitment agency Delhi NCR" and sector-specific terms, optimized all service pages, and launched a structured link building campaign through HR industry directories and local citations. Result: 100% increase in organic traffic within 18 months, first-page rankings for 200+ target keywords, and a significant uptick in qualified employer inquiries.</p>
         </div>
       </div>
 
@@ -731,11 +841,11 @@ footer { background: #070b14; padding: 36px 0; }
           <span class="case-tag">Ed-Tech / Training</span>
           <h3>Madrid Software Trainings — Tech Courses Platform, Delhi</h3>
           <div class="case-metrics">
-            <div class="case-m"><div class="case-m-val">+<span>380</span>%</div><div class="case-m-lbl">Course Page Traffic</div></div>
-            <div class="case-m"><div class="case-m-val">45<span>+</span></div><div class="case-m-lbl">Keywords Ranked</div></div>
-            <div class="case-m"><div class="case-m-val">7<span>mo</span></div><div class="case-m-lbl">Timeline</div></div>
+            <div class="case-m"><div class="case-m-val">+<span>90</span>%</div><div class="case-m-lbl">Course Page Traffic</div></div>
+            <div class="case-m"><div class="case-m-val">50+<span>+</span></div><div class="case-m-lbl">Keywords Ranked</div></div>
+            <div class="case-m"><div class="case-m-val">12<span>mo</span></div><div class="case-m-lbl">Timeline</div></div>
           </div>
-          <p class="case-desc">Madrid Software (madridsoftwaretrainings.com) offers job-ready courses in AI, Data Science, Full Stack, UI/UX, and Digital Marketing. The problem: their course pages were invisible despite strong course offerings. I performed a full content gap analysis, rewrote every course page with proper SEO structure, built a topical authority cluster with 24 blog posts covering AI, data analytics, and career advice, and earned backlinks from education directories and tech blogs. Result: 380% increase in organic traffic to course pages, 45+ keywords on page one, and measurable improvement in free consultation bookings from organic search.</p>
+          <p class="case-desc">Madrid Software (madridsoftwaretrainings.com) offers job-ready courses in AI, Data Science, Full Stack, UI/UX, and Digital Marketing. The problem: their course pages were invisible despite strong course offerings. I performed a full content gap analysis, rewrote every course page with proper SEO structure, built a topical authority cluster with 24 blog posts covering AI, data analytics, and career advice, and earned backlinks from education directories and tech blogs. Result: 90% increase in organic traffic to course pages, 50+ keywords on page one, and measurable improvement in free consultation bookings from organic search.</p>
         </div>
       </div>
 
@@ -817,54 +927,57 @@ footer { background: #070b14; padding: 36px 0; }
 <div class="divider"></div>
 
 <!-- ═══ TOOLS ═══ -->
-<section id="tools">
-  <div class="wrap">
-    <div class="section-head fade">
-      <p class="eyebrow">Toolkit</p>
-      <h2 class="title">Tools I Use Daily</h2>
-    </div>
-    <div class="tools-grid">
-      <div class="tool-card fade">
-        <div class="tool-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/SEMrush_logo.png/320px-SEMrush_logo.png" alt="SEMrush" onerror="this.parentElement.innerHTML='📌'"></div>
-        <div class="tool-name">SEMrush</div>
-        <div class="tool-desc">Keyword & competitor intel</div>
-      </div>
-      <div class="tool-card fade">
-        <div class="tool-logo" style="display:flex;align-items:center;justify-content:center;font-size:32px;height:48px;">🔗</div>
-        <div class="tool-name">Ahrefs</div>
-        <div class="tool-desc">Backlinks & rank tracking</div>
-      </div>
-      <div class="tool-card fade">
-        <div class="tool-logo" style="display:flex;align-items:center;justify-content:center;height:48px;">
-          <svg viewBox="0 0 48 48" width="42" height="42"><rect width="48" height="48" rx="8" fill="#4285F4"/><text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="22" font-weight="700" fill="white" font-family="sans-serif">SC</text></svg>
-        </div>
-        <div class="tool-name">Search Console</div>
-        <div class="tool-desc">Search performance data</div>
-      </div>
-      <div class="tool-card fade">
-        <div class="tool-logo" style="display:flex;align-items:center;justify-content:center;height:48px;">
-          <svg viewBox="0 0 48 48" width="42" height="42"><rect width="48" height="48" rx="8" fill="#F57C00"/><text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="22" font-weight="700" fill="white" font-family="sans-serif">GA</text></svg>
-        </div>
-        <div class="tool-name">Google Analytics 4</div>
-        <div class="tool-desc">Traffic & conversions</div>
-      </div>
-      <div class="tool-card fade">
-        <div class="tool-logo" style="display:flex;align-items:center;justify-content:center;font-size:32px;height:48px;">🕵️</div>
-        <div class="tool-name">Screaming Frog</div>
-        <div class="tool-desc">Technical SEO crawling</div>
-      </div>
-      <div class="tool-card fade">
-        <div class="tool-logo" style="display:flex;align-items:center;justify-content:center;height:48px;">
-          <svg viewBox="0 0 48 48" width="42" height="42"><rect width="48" height="48" rx="8" fill="#2196F3"/><text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="22" font-weight="700" fill="white" font-family="sans-serif">Mz</text></svg>
-        </div>
-        <div class="tool-name">Moz Pro</div>
-        <div class="tool-desc">DA & link metrics</div>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="tools-grid">
 
-<div class="divider"></div>
+  <div class="tool-card fade">
+    <div class="tool-logo">
+      <img src="https://cdn.simpleicons.org/semrush" alt="SEMrush">
+    </div>
+    <div class="tool-name">SEMrush</div>
+    <div class="tool-desc">Keyword & competitor intel</div>
+  </div>
+
+  <div class="tool-card fade">
+    <div class="tool-logo">
+      <img src="https://cdn.simpleicons.org/ahrefs/FF8800" alt="Ahrefs">
+    </div>
+    <div class="tool-name">Ahrefs</div>
+    <div class="tool-desc">Backlinks & rank tracking</div>
+  </div>
+
+  <div class="tool-card fade">
+    <div class="tool-logo">
+      <img src="https://www.gstatic.com/images/branding/product/2x/search_console_64dp.png" alt="Google Search Console">
+    </div>
+    <div class="tool-name">Search Console</div>
+    <div class="tool-desc">Search performance data</div>
+  </div>
+
+  <div class="tool-card fade">
+    <div class="tool-logo">
+      <img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" alt="Google Analytics 4">
+    </div>
+    <div class="tool-name">Google Analytics </div>
+    <div class="tool-desc">Traffic & conversions</div>
+  </div>
+
+  <div class="tool-card fade">
+    <div class="tool-logo">
+      <img src="https://cdn.simpleicons.org/frog/65B741" alt="Screaming Frog">
+    </div>
+    <div class="tool-name">Screaming Frog</div>
+    <div class="tool-desc">Technical SEO crawling</div>
+  </div>
+
+  <div class="tool-card fade">
+    <div class="tool-logo">
+      <img src="https://moz.com/favicon.ico" alt="Moz Pro">
+    </div>
+    <div class="tool-name">Moz Pro</div>
+    <div class="tool-desc">DA & link metrics</div>
+  </div>
+
+</div>
 
 <!-- ═══ PROCESS ═══ -->
 <section id="process">
@@ -1100,3 +1213,5 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 </script>
 </body>
 </html>
+
+
