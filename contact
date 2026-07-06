@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Mukesh Roy</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f9fc;
+color:#222;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+/* NAVBAR */
+
+header{
+background:#fff;
+box-shadow:0 2px 15px rgba(0,0,0,.05);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:80px;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+}
+
+.logo span{
+color:#c89b3c;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+font-weight:500;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#c89b3c;
+}
+
+.btn{
+background:#111827;
+color:#fff;
+padding:12px 25px;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#c89b3c;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 0;
+text-align:center;
+background:linear-gradient(135deg,#111827,#1f2937);
+color:#fff;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+opacity:.9;
+max-width:700px;
+margin:auto;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 0;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.form-box{
+background:#fff;
+padding:40px;
+border-radius:15px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.form-box h2{
+margin-bottom:25px;
+}
+
+.input-group{
+margin-bottom:20px;
+}
+
+.input-group label{
+display:block;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+padding:15px;
+border:1px solid #ddd;
+border-radius:8px;
+outline:none;
+font-size:16px;
+
+}
+
+.input-group textarea{
+height:170px;
+resize:none;
+}
+
+.submit-btn{
+
+width:100%;
+padding:15px;
+background:#111827;
+color:#fff;
+border:none;
+border-radius:8px;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.submit-btn:hover{
+
+background:#c89b3c;
+
+}
+
+/* RIGHT SIDE */
+
+.info-box{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+}
+
+.info-box h2{
+
+font-size:38px;
+margin-bottom:20px;
+
+}
+
+.info-box p{
+
+line-height:1.8;
+color:#666;
+margin-bottom:25px;
+
+}
+
+.feature{
+
+display:flex;
+align-items:center;
+margin-bottom:18px;
+background:#fff;
+padding:18px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.icon{
+
+width:55px;
+height:55px;
+background:#c89b3c;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+border-radius:50%;
+margin-right:18px;
+
+}
+
+.feature h4{
+
+margin-bottom:5px;
+
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.menu{
+
+display:none;
+
+}
+
+}
+/* MAP */
+
+.map-section{
+
+padding:80px 0;
+
+}
+
+.section-title{
+
+font-size:38px;
+margin-bottom:30px;
+text-align:center;
+
+}
+
+.map iframe{
+
+width:100%;
+height:450px;
+border:none;
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/* SOCIAL */
+
+.social{
+
+padding:80px 0;
+background:#fff;
+
+}
+
+.social-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+
+}
+
+.social-card{
+
+background:#f8f9fc;
+padding:35px;
+text-align:center;
+border-radius:18px;
+transition:.35s;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
+
+}
+
+.social-card:hover{
+
+transform:translateY(-8px);
+
+background:#111827;
+color:#fff;
+
+}
+
+.social-icon{
+
+font-size:40px;
+margin-bottom:20px;
+
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+
+padding:90px 0;
+
+}
+
+.newsletter-box{
+
+background:#111827;
+color:#fff;
+padding:60px;
+border-radius:20px;
+text-align:center;
+
+}
+
+.newsletter-box h2{
+
+font-size:40px;
+margin-bottom:15px;
+
+}
+
+.newsletter-box p{
+
+margin-bottom:30px;
+
+opacity:.85;
+
+}
+
+.newsletter-form{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+
+}
+
+.newsletter-form input{
+
+width:380px;
+padding:16px;
+border:none;
+border-radius:8px;
+
+}
+
+.newsletter-form button{
+
+padding:16px 35px;
+background:#c89b3c;
+border:none;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:90px;
+background:#0f172a;
+color:#fff;
+padding:70px 0 30px;
+
+}
+
+.footer-grid{
+
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:40px;
+
+}
+
+.footer-grid ul{
+
+list-style:none;
+
+}
+
+.footer-grid li{
+
+margin:12px 0;
+
+}
+
+.footer-grid a{
+
+color:#ddd;
+
+}
+
+.footer-grid a:hover{
+
+color:#c89b3c;
+
+}
+
+footer hr{
+
+margin:40px 0;
+border:0;
+border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+.copy{
+
+text-align:center;
+opacity:.8;
+
+}
+
+@media(max-width:900px){
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.newsletter-box{
+
+padding:40px 25px;
+
+}
+
+.newsletter-form input{
+
+width:100%;
+
+}
+
+}
+</style>
+
+</head>
+<!-- ==========================
+BACK TO TOP BUTTON
+========================== -->
+
+<button id="topBtn" title="Go to top">
+↑
+</button>
+
+<!-- ==========================
+SUCCESS POPUP
+========================== -->
+
+<div id="successPopup" class="popup">
+
+<div class="popup-box">
+
+<h2>🎉 Thank You!</h2>
+
+<p>
+
+Your message has been sent successfully.
+
+I'll contact you soon.
+
+</p>
+
+<button onclick="closePopup()">
+
+OK
+
+</button>
+
+</div>
+
+</div>
+
+<style>
+
+/*============================
+BACK TO TOP
+=============================*/
+
+#topBtn{
+
+position:fixed;
+bottom:30px;
+right:30px;
+
+width:55px;
+height:55px;
+
+border:none;
+border-radius:50%;
+
+background:#111827;
+color:#fff;
+
+font-size:22px;
+cursor:pointer;
+
+display:none;
+
+transition:.3s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+z-index:999;
+
+}
+
+#topBtn:hover{
+
+background:#c89b3c;
+transform:translateY(-5px);
+
+}
+
+/*============================
+POPUP
+=============================*/
+
+.popup{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.5);
+
+display:none;
+align-items:center;
+justify-content:center;
+
+z-index:9999;
+
+}
+
+.popup-box{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:15px;
+
+text-align:center;
+
+max-width:420px;
+width:90%;
+
+animation:popup .4s ease;
+
+}
+
+.popup-box h2{
+
+margin-bottom:15px;
+
+}
+
+.popup-box p{
+
+color:#666;
+margin-bottom:25px;
+line-height:1.7;
+
+}
+
+.popup-box button{
+
+padding:14px 35px;
+
+border:none;
+
+background:#111827;
+color:#fff;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.popup-box button:hover{
+
+background:#c89b3c;
+
+}
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+transform:scale(.7);
+
+}
+
+to{
+
+opacity:1;
+transform:scale(1);
+
+}
+
+}
+
+.fade{
+
+opacity:0;
+transform:translateY(40px);
+transition:.7s;
+
+}
+
+.fade.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+</style>
+
+<script>
+
+/*====================
+CONTACT FORM
+=====================*/
+
+const form=document.getElementById("contactForm");
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("successPopup").style.display="flex";
+
+form.reset();
+
+});
+
+/*====================
+POPUP
+=====================*/
+
+function closePopup(){
+
+document.getElementById("successPopup").style.display="none";
+
+}
+
+/*====================
+BACK TO TOP
+=====================*/
+
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>400){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+behavior:"smooth"
+
+});
+
+};
+
+/*====================
+SCROLL ANIMATION
+=====================*/
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".form-box,.info-box,.social-card,.newsletter-box,.feature,.map,.footer-grid")
+.forEach(el=>{
+
+el.classList.add("fade");
+
+observer.observe(el);
+
+});
+
+/*====================
+ACTIVE MENU
+=====================*/
+
+const links=document.querySelectorAll(".menu a");
+
+links.forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+links.forEach(item=>item.classList.remove("active"));
+
+link.classList.add("active");
+
+});
+
+});
+
+/*====================
+NEWSLETTER
+=====================*/
+
+const subscribe=document.querySelector(".newsletter-form button");
+
+subscribe.addEventListener("click",()=>{
+
+const email=document.querySelector(".newsletter-form input");
+
+if(email.value==""){
+
+alert("Please enter your email.");
+
+return;
+
+}
+
+alert("🎉 Successfully Subscribed!");
+
+email.value="";
+
+});
+
+/*====================
+PRELOADER EFFECT
+=====================*/
+
+window.addEventListener("load",()=>{
+
+document.body.style.opacity="1";
+
+});
+
+document.body.style.opacity="0";
+document.body.style.transition="1s";
+
+</script>
+
+</body>
+</html>
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+
+Mukesh<span>.</span>
+
+</div>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+<a href="index.html#about">About</a>
+<a href="index.html#services">Services</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<a href="#" class="btn">Hire Me</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Contact Me</h1>
+
+<p>
+
+Have a project in mind?
+Need a professional website,
+SEO service or digital solution?
+Let's connect.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="form-box">
+
+<h2>Send Message</h2>
+
+<form id="contactForm">
+
+<div class="input-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+placeholder="Enter your name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Subject</label>
+
+<input
+type="text"
+placeholder="Subject">
+
+</div>
+
+<div class="input-group">
+
+<label>Message</label>
+
+<textarea
+placeholder="Write your message..."
+required></textarea>
+
+</div>
+
+<button class="submit-btn">
+
+Send Message →
+
+</button>
+
+</form>
+
+</div>
+
+<div class="info-box">
+
+<h2>
+
+Let's Build Something Amazing.
+
+</h2>
+
+<p>
+
+I'm available for freelance projects,
+full-time opportunities and
+collaborations.
+
+Feel free to contact me anytime.
+
+</p>
+
+<div class="feature">
+
+<div class="icon">
+📧
+</div>
+
+<div>
+
+<h4>Email</h4>
+
+<p>your@email.com</p>
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="icon">
+📞
+</div>
+
+<div>
+
+<h4>Phone</h4>
+
+<p>+91 XXXXX XXXXX</p>
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="icon">
+📍
+</div>
+
+<div>
+
+<h4>Location</h4>
+
+<p>India</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     GOOGLE MAP
+=========================== -->
+
+<section class="map-section">
+
+<div class="container">
+
+<h2 class="section-title">
+Find Me
+</h2>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=India&output=embed"
+loading="lazy"
+allowfullscreen="">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+SOCIAL LINKS
+=========================== -->
+
+<section class="social">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Connect With Me
+
+</h2>
+
+<div class="social-grid">
+
+<a href="#" class="social-card">
+
+<div class="social-icon">
+🌐
+</div>
+
+<h3>Website</h3>
+
+<p>Visit My Portfolio</p>
+
+</a>
+
+<a href="#" class="social-card">
+
+<div class="social-icon">
+💼
+</div>
+
+<h3>LinkedIn</h3>
+
+<p>Professional Profile</p>
+
+</a>
+
+<a href="#" class="social-card">
+
+<div class="social-icon">
+💻
+</div>
+
+<h3>GitHub</h3>
+
+<p>View My Projects</p>
+
+</a>
+
+<a href="#" class="social-card">
+
+<div class="social-icon">
+📷
+</div>
+
+<h3>Instagram</h3>
+
+<p>Follow Me</p>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+NEWSLETTER
+=========================== -->
+
+<section class="newsletter">
+
+<div class="container">
+
+<div class="newsletter-box">
+
+<h2>
+
+Subscribe Newsletter
+
+</h2>
+
+<p>
+
+Get latest blogs,
+tips and tutorials directly
+into your inbox.
+
+</p>
+
+<div class="newsletter-form">
+
+<input
+type="email"
+placeholder="Enter Email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+FOOTER
+=========================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h2 class="logo">
+
+Mukesh<span>.</span>
+
+</h2>
+
+<p>
+
+Thank you for visiting my portfolio.
+
+Let's work together.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="index.html#about">About</a></li>
+
+<li><a href="blog.html">Blog</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>
+
+Contact
+
+</h3>
+
+<p>
+
+📧 your@email.com
+
+</p>
+
+<p>
+
+📞 +91 XXXXX XXXXX
+
+</p>
+
+<p>
+
+📍 India
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copy">
+
+© 2026 Mukesh Roy.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
