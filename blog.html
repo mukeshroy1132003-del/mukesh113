@@ -394,7 +394,99 @@ display:none;
 }
 
 }
+.blogs{
+padding:80px 0;
+}
 
+.blog-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+gap:35px;
+
+}
+
+.blog-card{
+
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.35s;
+
+}
+
+.blog-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.blog-card img{
+
+height:220px;
+object-fit:cover;
+
+}
+
+.blog-content{
+
+padding:28px;
+
+}
+
+.blog-tag{
+
+background:#c89b3c;
+color:#fff;
+padding:6px 15px;
+border-radius:30px;
+font-size:13px;
+
+}
+
+.blog-content h3{
+
+margin:18px 0;
+font-size:24px;
+
+}
+
+.blog-content p{
+
+color:#666;
+line-height:1.7;
+margin-bottom:20px;
+
+}
+
+.blog-meta{
+
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+color:#888;
+font-size:14px;
+
+}
+
+.blog-btn{
+
+display:inline-block;
+padding:12px 24px;
+background:#111827;
+color:#fff;
+border-radius:8px;
+transition:.3s;
+
+}
+
+.blog-btn:hover{
+
+background:#c89b3c;
+
+}
+  
 </style>
 
 </head>
@@ -616,3 +708,268 @@ Read Article →
 <!-- BLOG CARDS START HERE -->
 
 <div id="blogs"></div>
+<section class="blogs">
+
+<div class="container">
+
+<h2 class="section-title">
+Latest Articles
+</h2>
+
+<div class="blog-grid">
+
+<!-- Card 1 -->
+
+<div class="blog-card">
+
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800">
+
+<div class="blog-content">
+
+<span class="blog-tag">SEO</span>
+
+<h3>
+Complete On-Page SEO Guide
+</h3>
+
+<p>
+
+Learn how to optimize title,
+meta description, headings,
+images and URLs for better ranking.
+
+</p>
+
+<div class="blog-meta">
+
+<span>📅 July 2026</span>
+
+<span>5 min</span>
+
+</div>
+
+<a href="#" class="blog-btn">
+Read More →
+</a>
+
+</div>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="blog-card">
+
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800">
+
+<div class="blog-content">
+
+<span class="blog-tag">React</span>
+
+<h3>
+React Hooks Explained
+</h3>
+
+<p>
+
+Understand useState,
+useEffect and custom hooks
+with real examples.
+
+</p>
+
+<div class="blog-meta">
+
+<span>📅 July 2026</span>
+
+<span>7 min</span>
+
+</div>
+
+<a href="#" class="blog-btn">
+Read More →
+</a>
+
+</div>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="blog-card">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800">
+
+<div class="blog-content">
+
+<span class="blog-tag">
+Next.js
+</span>
+
+<h3>
+
+Build Portfolio with Next.js
+
+</h3>
+
+<p>
+
+Step-by-step portfolio
+website using Next.js
+and Vercel.
+
+</p>
+
+<div class="blog-meta">
+
+<span>📅 June 2026</span>
+
+<span>8 min</span>
+
+</div>
+
+<a href="#" class="blog-btn">
+
+Read More →
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="blog-card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
+
+<div class="blog-content">
+
+<span class="blog-tag">
+JavaScript
+</span>
+
+<h3>
+
+JavaScript ES2025 Guide
+
+</h3>
+
+<p>
+
+Everything about
+modern JavaScript features
+with examples.
+
+</p>
+
+<div class="blog-meta">
+
+<span>📅 June 2026</span>
+
+<span>6 min</span>
+
+</div>
+
+<a href="#" class="blog-btn">
+
+Read More →
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Card 5 -->
+
+<div class="blog-card">
+
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800">
+
+<div class="blog-content">
+
+<span class="blog-tag">
+AWS
+</span>
+
+<h3>
+
+Deploy Website on AWS
+
+</h3>
+
+<p>
+
+Complete beginner guide
+to AWS EC2 deployment.
+
+</p>
+
+<div class="blog-meta">
+
+<span>📅 May 2026</span>
+
+<span>10 min</span>
+
+</div>
+
+<a href="#" class="blog-btn">
+
+Read More →
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Card 6 -->
+
+<div class="blog-card">
+
+<img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800">
+
+<div class="blog-content">
+
+<span class="blog-tag">
+Docker
+</span>
+
+<h3>
+
+Docker for Beginners
+
+</h3>
+
+<p>
+
+Containerize your applications
+like a professional developer.
+
+</p>
+
+<div class="blog-meta">
+
+<span>📅 May 2026</span>
+
+<span>9 min</span>
+
+</div>
+
+<a href="#" class="blog-btn">
+
+Read More →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
