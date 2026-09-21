@@ -3,11 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/mukesh-logo-new.png">
 
 <title>Blog | Mukesh Roy</title>
 
 <meta name="description"
-content="SEO, Digital Marketing, Next.js, React, AWS and Career Tutorials by Mukesh Roy">
+content="Practical SEO, digital marketing, React, Next.js, AWS and career tutorials by Mukesh Roy, an SEO consultant in India.">
+<meta name="author" content="Mukesh Roy">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://mukesh113.vercel.app/blog.html">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="SEO & Digital Marketing Blog | Mukesh Roy">
+<meta property="og:description" content="Actionable tutorials on SEO, digital marketing, React, Next.js, AWS and career growth.">
+<meta property="og:url" content="https://mukesh113.vercel.app/blog.html">
+<meta property="og:image" content="https://mukesh113.vercel.app/images/mukesh-logo-new.png">
+<meta property="og:site_name" content="Mukesh Roy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SEO & Digital Marketing Blog | Mukesh Roy">
+<meta name="twitter:description" content="Practical guides for SEO, development and digital growth.">
+<meta name="twitter:image" content="https://mukesh113.vercel.app/images/mukesh-logo-new.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","@id":"https://mukesh113.vercel.app/blog.html#blog","url":"https://mukesh113.vercel.app/blog.html","name":"SEO and Digital Marketing Blog","description":"Practical tutorials by Mukesh Roy.","author":{"@type":"Person","name":"Mukesh Roy","url":"https://mukesh113.vercel.app/"},"inLanguage":"en-IN"}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,6 +89,16 @@ justify-content:space-between;
 font-size:34px;
 font-weight:700;
 font-family:Georgia,serif;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:42px;
+height:42px;
+border-radius:50%;
+object-fit:cover;
 }
 
 .logo span{
@@ -486,6 +513,40 @@ transition:.3s;
 background:#c89b3c;
 
 }
+
+/* Emerald Premium theme */
+body{background:#f3f7f1;color:#18352c;}
+header{background:#fffdf8;border-bottom-color:#d9e6dc;}
+.logo span,.menu a:hover,.hero h1 span,.blog-tag{color:#b4863b;}
+.hero,.hire-btn,.blog-btn{background:#0f3d32;}
+.hero-btn,.hire-btn:hover,.blog-btn:hover{background:#b4863b;}
+.blogs{background:#eaf3eb;}
+.blog-card{background:#fffdf8;border-color:#d9e6dc;}
+.hero, .blogs { position:relative; overflow:hidden; }
+header { box-shadow:0 8px 24px rgba(15,61,50,.06); }
+.blog-card { border:1px solid #d9e6dc; box-shadow:0 16px 36px rgba(15,61,50,.08); }
+.blog-card:hover { transform:translateY(-8px); box-shadow:0 22px 42px rgba(15,61,50,.14); }
+.hero-btn, .hire-btn, .blog-btn { box-shadow:0 8px 18px rgba(15,61,50,.14); }
+.hero-btn:hover, .hire-btn:hover, .blog-btn:hover { transform:translateY(-2px); }
+
+/* Cream Terracotta Editorial theme */
+body { background:#f8eee5; color:#38251f; }
+header { background:#fffaf2; border-bottom-color:#ead7cc; box-shadow:0 8px 24px rgba(91,48,35,.08); }
+.logo, .menu a { color:#38251f; }
+.logo span,.menu a:hover,.hero h1 span,.blog-tag { color:#b65f45; }
+.hero { background:linear-gradient(135deg,#3b211b,#804532); color:#fffaf2; }
+.hero-btn, .hire-btn, .blog-btn { background:#3b211b; color:#fffaf2; }
+.hero-btn:hover, .hire-btn:hover, .blog-btn:hover { background:#b65f45; }
+.blogs { background:#f3dfd2; }
+.blog-card { background:#fffaf2; border-color:#ead7cc; box-shadow:0 16px 36px rgba(91,48,35,.1); color:#38251f; }
+.blog-card:hover { box-shadow:0 22px 42px rgba(91,48,35,.16); }
+.blog-content p { color:#8d7165; }
+.nav-inner { width:90%; max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+.nav-menu { display:flex; align-items:center; gap:8px; list-style:none; }
+.nav-menu a { font-size:13px; font-weight:500; color:#65483d; padding:6px 12px; }
+.nav-hire { padding:9px 20px; background:#3b211b; color:#fffaf2; font-size:12px; font-weight:600; letter-spacing:.05em; border-radius:3px; }
+.nav-hire:hover { background:#b65f45; }
+@media(max-width:992px){.nav-menu{display:none;}}
   
 </style>
 
@@ -495,32 +556,20 @@ background:#c89b3c;
 
 <header>
 
-<div class="container">
-
-<nav>
-
-<div class="logo">
-Mukesh<span>.</span>
-</div>
-
-<div class="menu">
-
-<a href="index.html">Home</a>
-
-<a href="index.html#about">About</a>
-
-<a href="index.html#services">Services</a>
-
-<a href="#">Blog</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<a class="hire-btn" href="contact.html">Hire Me →</a>
-
-</nav>
-
+<div class="nav-inner">
+<a href="index.html" class="logo">
+<img src="images/mukesh-logo-new.png" alt="Mukesh Roy">
+<span>Mukesh Roy</span>
+</a>
+<ul class="nav-menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#services">Services</a></li>
+<li><a href="pricing.html">Pricing</a></li>
+<li><a href="index.html#cases">Results</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<a href="contact.html" class="nav-hire">Hire Me →</a>
 </div>
 
 </header>
@@ -569,7 +618,7 @@ Explore Articles →
 
 <div>
 
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900" alt="Digital marketing and SEO workspace" loading="lazy" decoding="async">
 
 </div>
 
@@ -654,7 +703,7 @@ Featured Article
 
 <div class="featured-card">
 
-<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=900">
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=900" alt="Developer writing code for an SEO guide" loading="lazy" decoding="async">
 
 <div class="feature-content">
 
@@ -722,7 +771,7 @@ Latest Articles
 
 <div class="blog-card">
 
-<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800" alt="On-page SEO and website code" loading="lazy" decoding="async">
 
 <div class="blog-content">
 
@@ -760,7 +809,7 @@ Read More →
 
 <div class="blog-card">
 
-<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800">
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800" alt="JavaScript code editor for a React tutorial" loading="lazy" decoding="async">
 
 <div class="blog-content">
 
@@ -798,7 +847,7 @@ Read More →
 
 <div class="blog-card">
 
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Laptop showing a Next.js portfolio project" loading="lazy" decoding="async">
 
 <div class="blog-content">
 
@@ -842,7 +891,7 @@ Read More →
 
 <div class="blog-card">
 
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="Modern JavaScript development workspace" loading="lazy" decoding="async">
 
 <div class="blog-content">
 
@@ -886,7 +935,7 @@ Read More →
 
 <div class="blog-card">
 
-<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800">
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800" alt="Cloud development and AWS deployment workspace" loading="lazy" decoding="async">
 
 <div class="blog-content">
 
@@ -929,7 +978,7 @@ Read More →
 
 <div class="blog-card">
 
-<img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800">
+<img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800" alt="Docker and software development setup" loading="lazy" decoding="async">
 
 <div class="blog-content">
 
